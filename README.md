@@ -7,3 +7,5 @@ sample_submission.csv A valid sample submission file.
 
 contact_id: A combination of the game_key, play_id, nfl_player_ids and step (as explained above)
 contact: A binary value predicting contact. 1 indicates contact and 0 indicates no-contact.
+
+DATASETS LINK-https://www.kaggle.com/competitions/nfl-player-contact-detection/data
