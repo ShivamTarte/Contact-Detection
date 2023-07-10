@@ -1,16 +1,12 @@
 # Contact-Detection
-This is my second competition in kagle in which players contact is detected based on distance,accleration,orientation and other factors and even through video we have to detect contact.Multiple dataset is given we have to found out contact at each step, each player and ground at multiple game play at frequency of 10 hz as one step.I successfully submitted the code.Based on this multiple features output 1 or 0 can be given as contact detection or not.
+In my second Kaggle competition, the task was to detect player contact based on various factors such as distance, acceleration, orientation, and more. We were provided with multiple datasets, and the goal was to determine whether contact occurred or not at each step of the game, for each player and the ground. The data was collected at a frequency of 10 Hz.
 
-I have created algorithm which consists a part similar to RNN and used feature engineering to extract new features from videos.
+To tackle this problem, I developed an algorithm that incorporated elements similar to Recurrent Neural Networks (RNNs). I also utilized feature engineering techniques to extract new features from the data.
 
-I performed object tracking on each player's helmet and tracking coordinates of each player.The model track certain movement that decides contact between players at a particular frame by depending on some previous frames data and some next frames data similar to RNN (eg.The algorithm can derive knowledge of contact between two players where relative velocity decreases rapidly  after contact and other such parameters as direction or orientation change etc).
+One aspect of my algorithm involved object tracking, specifically focusing on tracking the coordinates of each player's helmet. By analyzing the movement patterns, the model could identify specific motion characteristics indicative of contact between players. For example, a rapid decrease in relative velocity after contact or significant changes in direction or orientation were considered as potential signs of contact.
 
+The code I submitted successfully handled the tracking data, but my future plans involve expanding it to incorporate video data using the YOLOv5 algorithm. This will allow for more comprehensive and accurate detection of contact incidents in the National Football League of America, with the ultimate aim of minimizing harm and injuries.
 
-This is for national football league of america for detecing contact for harm and injuries.I am established my code on tracking data but i will adding my code more on video data by using YOLOv5
+The competition required participants to submit a valid sample submission file in CSV format. The submission file included a "contact_id" column, which combined the game_key, play_id, nfl_player_ids, and step (as explained earlier). The "contact" column contained binary values, with 1 indicating contact detected and 0 indicating no contact.
 
-sample_submission.csv A valid sample submission file.
-
-contact_id: A combination of the game_key, play_id, nfl_player_ids and step (as explained above)
-contact: A binary value predicting contact. 1 indicates contact and 0 indicates no-contact.
-
-DATASETS LINK-https://www.kaggle.com/competitions/nfl-player-contact-detection/data
+Overall, my approach involved leveraging RNN-like techniques, feature engineering, and object tracking to accurately predict player contact in the given datasets.
