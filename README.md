@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Player Contact Detection project! This repository contains the code and resources used in my second Kaggle competition. The goal of the competition was to detect player contact in a football game based on various factors such as distance, acceleration, orientation, and more. The data was collected at a frequency of 10 Hz.
+Welcome to the "Player Contact Detection" project! This repository houses the code and resources utilized in my second Kaggle competition. The primary goal of this competition was to detect instances of player contact in numerous American football games, similar to rugby. The detection was based on various factors, including distance, acceleration, orientation, and other relevant metrics. The data used for this task was collected at a frequency of 10 Hz, providing a detailed and comprehensive dataset for analysis.
 
 ## Algorithm Overview
 
